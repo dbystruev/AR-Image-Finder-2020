@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		699EED7C251CC7BF00336CB4 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = 699EED7A251CC7BF00336CB4 /* Screenshot02.png */; };
+		699EED7D251CC7BF00336CB4 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = 699EED7B251CC7BF00336CB4 /* Screenshot01.png */; };
 		69AABDCE251CABE300CEF981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AABDCD251CABE300CEF981 /* AppDelegate.swift */; };
 		69AABDD0251CABE300CEF981 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AABDCF251CABE300CEF981 /* art.scnassets */; };
 		69AABDD2251CABE300CEF981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AABDD1251CABE300CEF981 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		699EED7A251CC7BF00336CB4 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		699EED7B251CC7BF00336CB4 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 		69AABDCA251CABE300CEF981 /* AR Image Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Image Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69AABDCD251CABE300CEF981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69AABDCF251CABE300CEF981 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		699EED7F251CC7C500336CB4 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				699EED7B251CC7BF00336CB4 /* Screenshot01.png */,
+				699EED7A251CC7BF00336CB4 /* Screenshot02.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		69AABDC1251CABE300CEF981 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +71,12 @@
 			children = (
 				69AABDCD251CABE300CEF981 /* AppDelegate.swift */,
 				69AABDCF251CABE300CEF981 /* art.scnassets */,
-				69AABDD1251CABE300CEF981 /* ViewController.swift */,
-				69AABDD3251CABE300CEF981 /* Main.storyboard */,
 				69AABDD6251CABE300CEF981 /* Assets.xcassets */,
-				69AABDD8251CABE300CEF981 /* LaunchScreen.storyboard */,
 				69AABDDB251CABE300CEF981 /* Info.plist */,
+				69AABDD8251CABE300CEF981 /* LaunchScreen.storyboard */,
+				69AABDD3251CABE300CEF981 /* Main.storyboard */,
+				699EED7F251CC7C500336CB4 /* Screenshots */,
+				69AABDD1251CABE300CEF981 /* ViewController.swift */,
 			);
 			path = "AR Image Finder";
 			sourceTree = "<group>";
@@ -126,7 +140,9 @@
 			files = (
 				69AABDD0251CABE300CEF981 /* art.scnassets in Resources */,
 				69AABDDA251CABE300CEF981 /* LaunchScreen.storyboard in Resources */,
+				699EED7D251CC7BF00336CB4 /* Screenshot01.png in Resources */,
 				69AABDD7251CABE300CEF981 /* Assets.xcassets in Resources */,
+				699EED7C251CC7BF00336CB4 /* Screenshot02.png in Resources */,
 				69AABDD5251CABE300CEF981 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
