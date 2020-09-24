@@ -5,13 +5,18 @@
 //  Created by Denis Bystruev on 24.09.2020.
 //
 
-import UIKit
-import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    
+    let videoPlayer: AVPlayer = {
+        let url = Bundle.main.url(forResource: "rub",
+                                  withExtension: "mp4",
+                                  subdirectory: "art.scnassets")!
+        return AVPlayer(url: url)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +78,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let plane = SCNPlane(width: width, height: height)
         plane.firstMaterial?.diffuse.contents = image.name == "horses" ?
             UIImage(named: "monument") :
-            UIImage(named: "bridge")
+            videoPlayer
+        
+        if image.name == "horses" {
+            videoPlayer.play()
+        }
         
         // Create plane node
         let planeNode = SCNNode(geometry: plane)
@@ -81,6 +90,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Move plane node
         planeNode.position.x += image.name == "theatre" ? 0.01 : 0
+        
+        // Run animation
+        planeNode.runAction(
+            .sequence([
+                .wait(duration: 10),
+                .fadeOut(duration: 3),
+                .removeFromParentNode(),
+            ])
+        )
         
         // Add plane node to the given node
         node.addChildNode(planeNode)
