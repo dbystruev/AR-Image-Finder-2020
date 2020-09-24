@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "horses.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "unit" : "centimeters",
+    "width" : 8.1230585424133821
+  }
+}
